@@ -1,6 +1,12 @@
 # Course Java - revisiting patterns
 
-## Singleton
+## Pattern Groups 
+
+    Creational | Structural | Behavioral 
+
+## Creational
+
+### Singleton
 
 > Concepts
 - Only one instance created
@@ -15,7 +21,7 @@
 - Private constructor
 - No parameters required for construction
 
-## Builder
+### Builder
 
 > Concepts
 - Handles complex constructors
@@ -28,7 +34,7 @@
 - Negates the need for exposed setters
 - Take advantage of Generics
 
-## Prototype
+### Prototype
 
 > Concepts
 - Avoids costly creation
@@ -47,7 +53,7 @@
 - Can still utilize parameters for construction
 - Shallow VS Deep Copy
 
-## Factory Method
+### Factory Method
 
 > Concepts
 - Doesn’t expose instantiation logic
@@ -58,14 +64,14 @@
     - Calendar
     - ResourceBundle
     - NumberFormat
->
+
 > Design
 - Factory is responsible for lifecycle
 - Common Interface
 - Concrete Classes
 - Parameterized create method
 
-## AbstractFactory
+### AbstractFactory
 
 > Concepts
 - Factory of Factories
@@ -83,3 +89,48 @@
 - Concrete Classes
 - Parameterized create method
 - Composition
+
+## Structural
+
+### Adapter
+> Concepts
+- Plug adaptor
+- Convert interface into another interface
+- Legacy
+- Translates requests
+- Client, Adapter, Adaptee
+- Examples:
+- Arrays -> Lists
+- Streams
+ 
+> Design
+- Client centric
+-Integrate new with old
+Interface, but not required
+Adaptee can be the implementation
+
+
+### Bridge
+> Concepts
+> Design
+
+### Composite
+> Concepts
+> Design
+
+### Decorator
+> Concepts
+> Design
+
+### Facade
+> Concepts
+> Design
+
+### Flyweight
+> Concepts
+> Design
+
+### Proxy
+> Concepts
+> Design
+         
