@@ -47,8 +47,39 @@
 - Can still utilize parameters for construction
 - Shallow VS Deep Copy
 
-## Prototype
+## Factory Method
 
 > Concepts
+- Doesn’t expose instantiation logic
+- Defer to subclasses
+- Common interface
+- Specifed by architecture, implemented by user
+- Examples:
+    - Calendar
+    - ResourceBundle
+    - NumberFormat
+>
+> Design
+- Factory is responsible for lifecycle
+- Common Interface
+- Concrete Classes
+- Parameterized create method
+
+## AbstractFactory
+
+> Concepts
+- Factory of Factories
+- Factory of related objects
+- Common Interface
+- Defer to Subclasses
+- Examples:
+    - DocumentBuilder
+    - Frameworks 
 
 > Design
+- Groups Factories together
+- Factory is responsible for lifecycle
+- Common Interface
+- Concrete Classes
+- Parameterized create method
+- Composition
