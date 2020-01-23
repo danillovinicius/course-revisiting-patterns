@@ -109,10 +109,23 @@
 Interface, but not required
 Adaptee can be the implementation
 
-
 ### Bridge
 > Concepts
+- Decouple Abstraction and implementation
+- Encapsulation, Composition, Inheritance
+- Changes in Abstraction won’t affect client
+- Details won’t be right
+- Examples:
+- Driver
+- JDBC
+
 > Design
+- Interfaces and Abstract classes
+- Composition over Inheritance
+- More than Composition
+- Expect change from both sides
+- Abstraction, Implementor, Refined
+- Abstraction, Concrete Implementor
 
 ### Composite
 > Concepts
