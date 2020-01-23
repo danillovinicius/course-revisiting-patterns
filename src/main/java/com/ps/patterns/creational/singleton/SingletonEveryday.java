@@ -1,4 +1,4 @@
-package com.ps.patterns.structural.singleton;
+package com.ps.patterns.creational.singleton;
 
 public class SingletonEveryday {
 

@@ -1,4 +1,4 @@
-package com.ps.patterns.structural.builder;
+package com.ps.patterns.creational.builder;
 
 public class BuilderLunchOrderDemo {
 
