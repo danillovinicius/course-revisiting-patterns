@@ -93,6 +93,7 @@
 ## Structural
 
 ### Adapter
+
 > Concepts
 - Plug adaptor
 - Convert interface into another interface
@@ -110,6 +111,7 @@
 - Adaptee can be the implementation
 
 ### Bridge
+
 > Concepts
 - Decouple Abstraction and implementation
 - Encapsulation, Composition, Inheritance
@@ -128,6 +130,7 @@
 - Abstraction, Concrete Implementor
 
 ### Composite
+
 > Concepts
 - Components represent part or whole structure
 - Compose objects into tree structures
@@ -146,18 +149,72 @@
 - Component, Leaf, Composite
 
 ### Decorator
+
 > Concepts
+- Also called a wrapper
+- Add behavior without affecting others
+- More than just inheritance
+- Single Responsibility Principle
+- Compose behavior dynamically
+- Examples:
+    - java.io.InputStream
+    - java.util.Collections#checkedList
+    - UI components
+
 > Design
+- Inheritance based
+- Utilizes composition and inheritance (is-a, has-a)
+- Alternative to subclassing
+- Constructor requires instance from hierarchy 
 
 ### Facade
+
 > Concepts
+- Make an API easier to use
+- Reduce dependencies on outside code
+- Simplify the interface or client usage
+- Usually a refactoring pattern
+- Examples:
+    - java.net.URL
+    - javax.faces.context.FacesContext 
+
 > Design
+- Class that utilizes composition
+- Shouldn’t have a need for inheritance
+- Typically encompasses full lifecycle 
 
 ### Flyweight
+
 > Concepts
+- More efficient use of memory
+- Large number of similar objects
+- Immutable
+- Most of the object states can be extrinsic
+- Examples:
+- java.lang.String
+- java.lang.Integer#valueOf(int)
+- Boolean, Byte, Character, Short, Long
+
 > Design
+- Pattern of patterns
+- Utilizes a Factory
+- Encompasses Creation and Structure
+- Client, Factory, Flyweight, ConcreteFlyweight 
 
 ### Proxy
+
 > Concepts
+- Interface by wrapping
+- Can add functionality
+- Security, Simplicity, Remote, Cost
+- Proxy called to access real object
+- Examples:
+    - java.lang.refect.Proxy
+    - java.rmi.* 
+
 > Design
-         
+- Interface based
+- Interface and Implementation Class
+- java.lang.reflect.InvocationHandler
+- java.lang.reflect.Proxy
+- Client, Interface, InvocationHandler, Proxy 
