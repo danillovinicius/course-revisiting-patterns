@@ -100,14 +100,14 @@
 - Translates requests
 - Client, Adapter, Adaptee
 - Examples:
-- Arrays -> Lists
-- Streams
+    - Arrays -> Lists
+    - Streams
  
 > Design
 - Client centric
--Integrate new with old
-Interface, but not required
-Adaptee can be the implementation
+- Integrate new with old
+- Interface, but not required
+- Adaptee can be the implementation
 
 ### Bridge
 > Concepts
@@ -116,8 +116,8 @@ Adaptee can be the implementation
 - Changes in Abstraction won’t affect client
 - Details won’t be right
 - Examples:
-- Driver
-- JDBC
+    - Driver
+    - JDBC
 
 > Design
 - Interfaces and Abstract classes
@@ -129,7 +129,21 @@ Adaptee can be the implementation
 
 ### Composite
 > Concepts
+- Components represent part or whole structure
+- Compose objects into tree structures
+- Individual object treated as a Composite
+- Same operations applied on individual and composites
+- Examples:
+    - java.awt.Component
+    - JSF widgets
+    - RESTful service GETs
+
 > Design
+- Tree structured
+- Component
+- Leaf or Composite, same operations
+- Composite knows about child objects
+- Component, Leaf, Composite
 
 ### Decorator
 > Concepts
