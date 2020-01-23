@@ -1,7 +1,7 @@
-package com.pluralsight.factory;
+package com.ps.patterns.creational.factory;
 
 public enum WebsiteType {
 
-	BLOG,SHOP;
-	
+  BLOG, SHOP;
+
 }
